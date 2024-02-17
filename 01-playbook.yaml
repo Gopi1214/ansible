@@ -1,4 +1,5 @@
 - name : ping the server
+  hosts : web
   tasks : 
   - name : playing with ping
     ansible.buitin.ping:
