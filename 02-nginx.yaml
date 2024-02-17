@@ -1,8 +1,6 @@
-- name: ping playbook
-  host: web
-  tasks: list of servers
-  - name: ping the server
-    ansible.builtin.ping:
+- name: install and run nginx
+  hosts: web
+  tasks:
   - name: install nginx
     ansible.builtin.package:
       name: nginx
