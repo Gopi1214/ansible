@@ -4,6 +4,7 @@
     Trainer: "Siva"
     Course: "Devops"
     Time: "110HRS"
+    
   tasks:
   - name: playing with variables
     vars:
