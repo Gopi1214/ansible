@@ -1,0 +1,12 @@
+#variable
+- name: playing with variables
+  hosts: localhost
+  vars:
+   Person: Siva
+   Course: Devops
+   Time: 110HRS
+  tags:
+  - name: working with ansible variables
+    ansible.builtin.debug:
+     msg: I am learning devops from {{siva}}, and the technology name is {{Course}}, duriation is {{Time}}
+     
