@@ -1,0 +1,8 @@
+- name: variables from file
+  hosts: localhost
+  vars-file:
+    variables.yaml
+  tasks:
+  - name: playing with variables from file
+    debug:
+     msg: "I am learning {{Course}}, Tained by {{Trainer}}, with a duration of {{Time}}"
