@@ -1,0 +1,15 @@
+- name: play with variables using prompt
+  hosts: localhost
+  vars_prompt:
+    - name: username
+      prompt: what is your username?
+      private: False
+
+    - name: password
+      prompt: Enter your password
+      private: True
+
+  tasks:
+   - name: variables using prompt
+     ansible.builtin.debug:
+      msg: "logged in as {{username}} with password as {{password}}"
