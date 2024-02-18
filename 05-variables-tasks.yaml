@@ -1,13 +1,12 @@
 - name: variables using prompt
   hosts: localhost
   vars:
-  Trainer: "Siva"
-  Course: "Devops"
-  Time: "110HRS"
+    Trainer: "Siva"
+    Course: "Devops"
+    Time: "110HRS"
   tasks:
   - name: playing with variables
     vars:
-    Course: "DevOps with AWS"
+      Course: "DevOps with AWS"
     ansible.builtin.debug:
-     msg: "I am learning {{Course}}, Trainer is {{Trainer}}, and the duration of the course is {{Time}}"
-     
+      msg: "I am learning {{Course}}, Trainer is {{Trainer}}, and the duration of the course is {{Time}}"
