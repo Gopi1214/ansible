@@ -1,17 +1,17 @@
 - name: play-1 with Task-1
   hosts: localhost
-  vars:
-   person: suresh
+  # vars:
+  #  person: suresh
   tasks: 
   - name: play1 with message1
     ansible.builtin.debug:
-      msg: "I am {{person}}"
+      msg: "I am learning devops"
 
 - name: play-2 with Task-2
   hosts: localhost
-  vars: 
-   wishes: Morning
+  # vars: 
+  #  wishes: Morning
   tasks:
   - name: play2 with message2
     debug:
-      msg: "Good {{wishes}}"
+      msg: "Good morning"
