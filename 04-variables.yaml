@@ -2,11 +2,12 @@
 - name: playing with variables
   hosts: localhost
   vars:
-   Person: Siva
-   Course: Devops
-   Time: 110HRS
-  tags:
+   Trainer: "Siva"
+   Course: "Devops"
+   Time: "110HRS"
+   
+  tasks:
   - name: working with ansible variables
     ansible.builtin.debug:
-     msg: I am learning devops from {{siva}}, and the technology name is {{Course}}, duriation is {{Time}}
-     
+     msg: I am learning devops from {{Trainer}}, and the technology name is {{Course}}, duriation is {{Time}}
+
