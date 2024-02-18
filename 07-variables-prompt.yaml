@@ -6,10 +6,10 @@
       private: False
 
     - name: password
-      prompt: Enter your password
+      prompt: Please enter your password here.
       private: True
 
   tasks:
    - name: variables using prompt
      ansible.builtin.debug:
-      msg: "logged in as {{username}} with password as {{password}}"
+      msg: "logged in as {{username}}, with passwd as {{password}}"
