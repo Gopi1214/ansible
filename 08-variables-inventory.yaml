@@ -1,5 +1,6 @@
 - name: play with variables using inventory
-  hosts: localhost
+  hosts: 
+   localhost1:
   tasks:
   - name: variables in inventory
     ansible.builtin.debug:
