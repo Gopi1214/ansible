@@ -1,11 +1,23 @@
 - name: loops
   hosts: localhost
   tasks:
-  - name: print persons
-    ansible.builtin.debug:
-     msg: "Hello user {{item}}"
-    loop:
-      - gopi
-      - raju
-      - ramu
-      - shannu
+  # - name: print persons
+  #   ansible.builtin.debug:
+  #    msg: "Hello user {{item}}"
+  #   loop:
+  #     - gopi
+  #     - raju
+  #     - ramu
+  #     - shannu
+   - name: print persons
+     ansible.builtin.package:
+      name: "installing {{item}}"
+      state: present
+     loop:
+       - git
+       - mysql
+       - nodejs
+  
+
+
+  
