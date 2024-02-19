@@ -9,14 +9,14 @@
   #     - raju
   #     - ramu
   #     - shannu
-   - name: print persons
+   - name: packages installation
      ansible.builtin.package:
-      name: "installing {{item}}"
-      state: present
+        name: "installing {{item}}"
+        state: present
      loop:
-        git
-        mysql
-        nodejs
+     - git
+     - mysql
+     - postfix
   
 
 
