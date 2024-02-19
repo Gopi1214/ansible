@@ -1,0 +1,10 @@
+- name: playbooks to work with conditions
+  hosts: localhost
+  tasks: 
+  - name: check roboshop user exists or not
+    ansible.builtin.command: id roboshop
+    register: user
+
+  - name: printing the variable
+    ansible.builtin.debug:
+    msg: "user is {{user}}"
