@@ -18,17 +18,17 @@
   tasks:
   - name: key value
     ansible.builtin.debug:
-     mgs: "name: {{NAME}}"
+     msg: "name: {{NAME}}"
 
   - name: print lists
     ansible.builtin.debug:
-     mgs: " list: {{skills}}"
+     msg: " list: {{skills}}"
 
   - name: print maps
     ansible.builtin.debug:
-     mgs: "experience: {{Experience}}}"
+     msg: "experience: {{Experience}}}"
 
   - name: print boolean
     ansible.builtin.debug:
-     mgs: "is he tainer: {{Trainer}}"
+     msg: "is he tainer: {{Trainer}}"
 
