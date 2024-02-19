@@ -16,19 +16,19 @@
     Trainer: true #boolean
 
   tasks:
-  - name: variables datat types
+  - name: key value
     ansible.builtin.debug:
      mgs: " name: {{name}}"
 
-  - name: variables datat types
+  - name: print lists
     ansible.builtin.debug:
      mgs: " list: {{skills}}"
 
-  - name: variables datat types
+  - name: print maps
     ansible.builtin.debug:
      mgs: "experience: {{Experience}}}"
 
-  - name: variables datat types
+  - name: print boolean
     ansible.builtin.debug:
      mgs: "is he tainer: {{Trainer}}"
 
