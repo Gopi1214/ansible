@@ -18,9 +18,13 @@
   tasks:
   - name: variables from args
 
-    vars:
-     PERSON: "Gopi from task"
-     WISHES: "Morning from task"
+    # vars:
+    #  PERSON: "Gopi from task"
+    #  WISHES: "Morning from task"
      
     ansible.builtin.debug:
      msg: "Hi {{PERSON}}, Good {{WISHES}}" 
+
+  # Preferences
+     # CMD
+     # task
