@@ -2,7 +2,7 @@
 - name: diff data types
   hosts: localhost
   vars: #key valuse pair
-    username: gopi
+    NAME: gopi
     skills: #list types
     - Devops
     - shell
@@ -10,15 +10,15 @@
     - ansible
     - docker
     Experience: #map tyoe
-     Devops: 3 
-     AWS: 3 
-     GCP: 2
+      Devops: 3 
+      AWS: 3 
+      GCP: 2
     Trainer: true #boolean
 
   tasks:
   - name: key value
     ansible.builtin.debug:
-     mgs: " name: {{name}}"
+     mgs: "name: {{NAME}}"
 
   - name: print lists
     ansible.builtin.debug:
