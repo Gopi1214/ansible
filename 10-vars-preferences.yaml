@@ -2,18 +2,18 @@
   hosts: localhost
   # vars_files:
   #  - variables.yaml
-  vars_prompt:
-    - name: PERSON
-      prompt: please enter your name
-      private: false
+  # vars_prompt:
+  #   - name: PERSON
+  #     prompt: please enter your name
+  #     private: false
     
-    - name: WISHES
-      prompt: please enter WISHES
-      private: true
+  #   - name: WISHES
+  #     prompt: please enter WISHES
+  #     private: true
      
   vars:
-    PERSON: "Gopifromplay"
-    WISHES: "Morningfromplay"
+    PERSON: "Gopi from play"
+    WISHES: "Morning from play"
 
   tasks:
   - name: variables from args
@@ -29,3 +29,4 @@
      # CMD
      # task
      # file
+     # Prompt
