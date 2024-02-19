@@ -12,7 +12,7 @@
   #     - shannu
    - name: packages installation
      ansible.builtin.package:
-        name: "installing {{item}}"
+        name: "{{item}}"
         state: present
      loop:
        - git
