@@ -1,0 +1,26 @@
+- name: playing with variables from command args
+  hosts: localhost
+  vars_files:
+   - variables.yaml
+  vars_prompt:
+    - name: PERSON
+      prompt: please enter your name
+      private: false
+    
+    - name: WISHES
+      prompt: please enter WISHES
+      private: true
+     
+  vars:
+    PERSON: Gopi
+    WISHES: Morning
+
+  tasks:
+  - name: variables from args
+
+    vars:
+     PERSON: Gopi
+     WISHES: Morning
+     
+    ansible.builtin.debug:
+     msg: "Hi {{PERSON}}, Good {{WISHES}}" 
