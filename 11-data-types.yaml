@@ -1,0 +1,34 @@
+# playing with data types
+- name: diff data types
+  hosts: localhost
+  vars: #key valuse pair
+    name: gopi
+    skills: #list types
+    - Devops
+    - shell
+    - linux
+    - ansible
+    - docker
+    Experience: #map tyoe
+     Devops: 3 
+     AWS: 3 
+     GCP: 2
+    Trainer: true #boolean
+
+  tasks:
+  - name: variables datat types
+    ansible.builtin.debug:
+     mgs: " name: {{name}}"
+
+  - name: variables datat types
+    ansible.builtin.debug:
+     mgs: " list: {{skills}}"
+
+  - name: variables datat types
+    ansible.builtin.debug:
+     mgs: "experience: {{Experience}}}"
+
+  - name: variables datat types
+    ansible.builtin.debug:
+     mgs: "is he tainer: {{Trainer}}"
+
