@@ -12,8 +12,8 @@
       private: true
      
   vars:
-    PERSON: "Gopi from play"
-    WISHES: "Morning from play"
+    PERSON: "Gopifromplay"
+    WISHES: "Morningfromplay"
 
   tasks:
   - name: variables from args
