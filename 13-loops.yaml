@@ -10,14 +10,25 @@
   #     - raju
   #     - ramu
   #     - shannu
-   - name: packages installation
-     ansible.builtin.package:
-        name: "{{item}}"
-        state: present
-     loop:
-       - git
-       - mysql
-       - postfix
+
+  #  - name: packages installation
+  #    ansible.builtin.package:
+  #       name: "{{item}}"
+  #       state: present
+  #    loop:
+  #      - git
+  #      - mysql
+  #      - postfix
+  - name: installing packages in loop
+    ansible.builtin.package:
+       name: "{{item.name}}"
+       state: "{{item.state}}"
+    loop:
+      - { name: "git", state: "present" }
+      - { name: "mysql", state: "absent" }
+      - { name: "postfix", state: "absent" }
+      - { name: "nginx", state: "present" }
+
   
 
 
