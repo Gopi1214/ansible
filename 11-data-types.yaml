@@ -2,7 +2,7 @@
 - name: diff data types
   hosts: localhost
   vars: #key valuse pair
-    name: gopi
+    username: gopi
     skills: #list types
     - Devops
     - shell
