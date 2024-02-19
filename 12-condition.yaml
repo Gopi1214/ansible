@@ -11,7 +11,7 @@
      msg: "User is {{user}}"
 
   - name: printing exit status or return code
-    ansible.buitin.debug:
+    ansible.builtin.debug:
      msg: "stats is {{user.rc}}"
-     
+
 # while: user.rc != 0
