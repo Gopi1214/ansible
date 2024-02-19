@@ -14,9 +14,9 @@
       name: "installing {{item}}"
       state: present
      loop:
-       - git
-       - mysql
-       - nodejs
+        git
+        mysql
+        nodejs
   
 
 
