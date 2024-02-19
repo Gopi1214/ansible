@@ -1,7 +1,7 @@
 - name: playing with variables from command args
   hosts: localhost
-  vars_files:
-   - variables.yaml
+  # vars_files:
+  #  - variables.yaml
   vars_prompt:
     - name: PERSON
       prompt: please enter your name
@@ -28,3 +28,4 @@
   # Preferences
      # CMD
      # task
+     # file
