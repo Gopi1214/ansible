@@ -11,9 +11,9 @@
   #     prompt: please enter WISHES
   #     private: true
      
-  vars:
-    PERSON: "Gopi from play"
-    WISHES: "Morning from play"
+  # vars:
+  #   PERSON: "Gopi from play"
+  #   WISHES: "Morning from play"
 
   tasks:
   - name: variables from args
@@ -30,3 +30,4 @@
      # task
      # file
      # Prompt
+     # play
