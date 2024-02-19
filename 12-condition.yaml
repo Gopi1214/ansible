@@ -13,5 +13,4 @@
   - name: printing exit status or return code
     ansible.buitin.debug:
      msg: "stats is {{user.rc}}
-     
-# while: user.rc != 0
+
