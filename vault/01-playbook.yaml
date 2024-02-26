@@ -1,5 +1,5 @@
 - name: ping playbbok
-  hosts: web
+  hosts: localhost
   tasks: 
   - name: playing with ping
     ansible.builtin.ping:
