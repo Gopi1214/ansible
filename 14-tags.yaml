@@ -1,0 +1,17 @@
+- name: tags playbook
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: print AWS
+    tags:
+      - deployment
+    ansible.builtin.debug:
+      msg: hello AWS
+  
+  - name: print DevOps
+    tags: 
+      - deployment
+    ansible.builtin.debug:
+      msg: hello DevOps
+      
+  
